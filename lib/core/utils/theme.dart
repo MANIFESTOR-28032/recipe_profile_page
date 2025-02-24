@@ -1,21 +1,24 @@
 import 'package:flutter/material.dart';
-import 'app_colors.dart';
 
-final ThemeData darkTheme = ThemeData(
-  scaffoldBackgroundColor: AppColors.MainColor,
+import 'colors.dart';
+
+final ThemeData appThemeData = ThemeData(
+  scaffoldBackgroundColor: AppColors.beigeColor,
+  fontFamily: 'Poppins',
   colorScheme: ColorScheme(
     brightness: Brightness.dark,
-    primary: AppColors.ReddishPink,
-    onPrimary: AppColors.milkWhite,
-    secondary: AppColors.Pink,
-    onSecondary: AppColors.PinkSub,
+    primary: AppColors.redPinkMain,
+    onPrimary: Colors.white,
+    secondary: AppColors.pink,
+    onSecondary: AppColors.pinkSub,
     error: Colors.red,
     onError: Colors.white,
-    surface: AppColors.MainColor,
+    surface: AppColors.beigeColor,
     onSurface: Colors.white,
   ),
   appBarTheme: AppBarTheme(
-    backgroundColor: AppColors.MainColor,
-    surfaceTintColor: Colors.red,
-  ),
+    backgroundColor: AppColors.beigeColor,
+    foregroundColor: AppColors.redPinkMain,
+    surfaceTintColor: Colors.transparent,
+  )
 );
